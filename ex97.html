@@ -1,0 +1,40 @@
+<DOCTYPE! html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Ex.96</title>
+        <script language="JavaScript">
+       
+            function alterar(){
+                var n1 = parseInt(document.getElementById("n1").value);
+                var n2 = parseInt(document.getElementById("n2").value);
+                var x;
+                
+                if(n1 > n2){
+                    x = n1 - n2;
+                }
+                else{
+                    x = n2 - n1;
+                }
+                document.getElementById("show").value = x;
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+        <h1>Entre com dois valores numéricos:</h1>
+        <br>
+        N1: <input id="n1" type="number" size="5">
+        <br>
+        N2: <input id="n2" type="number" size="5">
+        <br>
+        <br>
+        <input id="btn" type="button" value="OK" onclick="alterar();">
+        <br>
+        <br>
+        Diferença do maior para o menor: <input id="show" type="text" size="5">
+        </form>
+    </body>
+</html>   
+<!--97. Ler dois valores numéricos e apresentar a diferença do maior para o menor. 
+    Utilize formulário para Entrada e/ou Saída.-->

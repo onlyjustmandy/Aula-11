@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex 84</title>
+    <script language="javascript">
+       function diferença(){
+       var maior, menor, res 
+        num1 = parseInt(document.getElementById("pri").value);
+        num2 = parseInt(document.getElementById("seg").value);
+
+        if (Number (num1) > Number(num2)){
+            maior = Number(num1);
+            menor = Number(num2);
+        }else   {
+            maior = Number(num2);
+            menor = Number(num1);
+        }
+        }
+        res = maior - menor;
+ dif.innerHTML = res 
+    </script>
+</head>
+
+<body>
+    <form>
+    <label> insira o primeiro valor:</label>
+     <input type="text" id="pri"/><br>
+     <label> insira o segundo valor:</label>
+     <input type="text" id="seg"/><br>   
+     <input type="button" id="btn" value="calcular" onclick="diferença()"/>
+     <p><span id="dif"></span></p>
+    </form>
+    
+</body>
+
+</html>
+<!-- Ler dois valores numéricos e apresentar a diferença do maior para o menor.
+     Utilize métodos de Entrada e/ou Saída.-->

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>  
+        <meta charset="utf-8">
+        <title>Exercicio 82</title>
+        <script language="JavaScript">
+
+             var n1, n2, n3, p, s, t;
+             //entrda
+             n1 = prompt("Digite o primeiro valor: ");
+             n2 = prompt("Digite o segundo valor: ");
+             n3 = prompt("Digite o terceiro valor: ");
+
+             //processamento
+             if((n1 > n2)&&(n1 > n3))
+            {
+                t = n1;
+            }else if ((n1 < n2)&&(n1 < n3))
+            {
+                s = n1;
+            }else{
+                p = n1;
+            }
+
+            if((n2 > n1)&&(n2 > n3))
+            {
+                t = n2;
+            }else if ((n2 > n1)&&(n2 < n3))
+            {
+                s = n2;
+            }else{
+                p = n2;
+            }
+
+            if((n3 > n1)&&(n3 > n2))
+            {
+                t = n3;
+            }else if ((n3 < n2)&&(n3 > n1))
+            {
+                s = n3;
+            }else{
+                p = n3;
+            }
+             //saida
+
+             alert("Você Digitou: " + n1 +", " + n2 + ", "+ n3+);
+
+             alert("Resultado: " + p  + s + t);
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
